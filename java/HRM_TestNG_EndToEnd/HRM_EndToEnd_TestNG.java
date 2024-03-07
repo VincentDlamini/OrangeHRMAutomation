@@ -249,7 +249,7 @@ public class HRM_EndToEnd_TestNG {
 	  endToEnd.findElement(By.xpath("//button[@type='submit']")).click();
 	  
 	  String newUser = "Harry Smith";
-	  String newActual_user = endToEnd.findElement(By.xpath("//p[@class='oxd-userdropdown-name']")).getText();
+	  String newActual_user = endToEnd.findElement(By.xpath("//h6[contains(.,'Harry Smith')]")).getText();
 	  
 	  Assert.assertEquals(newActual_user, newUser);
   }
